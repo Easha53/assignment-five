@@ -141,6 +141,11 @@ function CallHistory()
       `
       callContainer.appendChild(Div);
    }
-
-
+// function to clear history
+function ClearHistory(){
+document.getElementById('call-container').innerHTML = "";
+} 
+document.getElementById('clear-btn').addEventListener('click', function(){
+   ClearHistory()
+})
 
